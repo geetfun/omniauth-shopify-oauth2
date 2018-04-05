@@ -3,7 +3,7 @@ $:.push File.expand_path('../lib', __FILE__)
 require 'omniauth/shopify_app/version'
 
 Gem::Specification.new do |s|
-  s.name     = 'omniauth-shopify-app-oauth2'
+  s.name     = 'omniauth-shopify_app-oauth2'
   s.version  = OmniAuth::ShopifyApp::VERSION
   s.authors  = ['Denis Odorcic']
   s.email    = ['gems@shopify.com']
