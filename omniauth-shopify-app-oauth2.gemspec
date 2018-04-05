@@ -4,7 +4,7 @@ require 'omniauth/shopify_app/version'
 
 Gem::Specification.new do |s|
   s.name     = 'omniauth-shopify-app-oauth2'
-  s.version  = OmniAuth::Shopify::VERSION
+  s.version  = OmniAuth::ShopifyApp::VERSION
   s.authors  = ['Denis Odorcic']
   s.email    = ['gems@shopify.com']
   s.summary  = 'Shopify strategy for OmniAuth'
