@@ -1,8 +1,8 @@
 require 'spec_helper'
-require 'omniauth-shopify-oauth2'
+require 'omniauth-shopify_app-oauth2'
 require 'base64'
 
-describe OmniAuth::Strategies::Shopify do
+describe OmniAuth::Strategies::ShopifyApp do
   before :each do
     @request = double('Request',
                       :env => { })
@@ -16,7 +16,7 @@ describe OmniAuth::Strategies::Shopify do
 
   subject do
     args = [@client_id, @client_secret, @options].compact
-    OmniAuth::Strategies::Shopify.new(nil, *args).tap do |strategy|
+    OmniAuth::Strategies::ShopifyApp.new(nil, *args).tap do |strategy|
       strategy.stub(:request) { @request }
       strategy.stub(:session) { {} }
     end
